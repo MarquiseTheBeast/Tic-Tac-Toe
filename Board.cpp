@@ -42,8 +42,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -58,8 +57,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -74,8 +72,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -90,8 +87,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -106,8 +102,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -122,8 +117,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -138,8 +132,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -154,8 +147,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\n"
-             << SecondPlayer << " wins the game" << endl;
+        cout << "\n" << SecondPlayer << " wins the game" << endl;
         return true;
     }
 
@@ -164,8 +156,7 @@ bool TicTacToeBoard::bCheckBoxesForThreeMarks(bool bIsTwoPlayerGame)
     {
         cout << "\n";
         PrintBoard();
-        cout << "\nTie!"
-             << endl;
+        cout << "\nTie!" << endl;
         return true;
     }
 
@@ -219,7 +210,7 @@ void TicTacToeBoard::SetBox(char PlayerLetter)
                 throw "\nNumber out of range\n";
             }
 
-            // Linear seacrch to check if the selected box number is available;
+            // Linear seacrch to check if the selected box number is available
             for (int i = 0; i < 3; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -231,7 +222,7 @@ void TicTacToeBoard::SetBox(char PlayerLetter)
                     {
                         cin.clear();
                         cin.ignore(10000, '\n');
-                        throw "Box already used";
+                        throw "\nBox already used\n";
                     }
 
                     // Convert number char to int
@@ -292,13 +283,11 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
             // Used to erase the selected box number in vector
             auto EraseNumber = find(GameBoardNumberList.begin(), GameBoardNumberList.end(), BoxNumber);
 
-            // AI selects the randomized box number it has got and checks if the box number is not used before setting it
+            // AI checks if the box number is not used before setting it
             switch (BoxNumber)
             {
             case 1:
-                if (GameBoard[0][0] == 'X' || GameBoard[0][0] == 'O')
-                {
-                }
+                if (GameBoard[0][0] == 'X' || GameBoard[0][0] == 'O');
                 else
                 {
                     GameBoard[0][0] = PlayerLetter;
@@ -307,9 +296,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 2:
-                if (GameBoard[0][1] == 'X' || GameBoard[0][1] == 'O')
-                {
-                }
+                if (GameBoard[0][1] == 'X' || GameBoard[0][1] == 'O');
                 else
                 {
                     GameBoard[0][1] = PlayerLetter;
@@ -318,9 +305,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 3:
-                if (GameBoard[0][2] == 'X' || GameBoard[0][2] == 'O')
-                {
-                }
+                if (GameBoard[0][2] == 'X' || GameBoard[0][2] == 'O');
                 else
                 {
                     GameBoard[0][2] = PlayerLetter;
@@ -329,9 +314,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 4:
-                if (GameBoard[1][0] == 'X' || GameBoard[1][0] == 'O')
-                {
-                }
+                if (GameBoard[1][0] == 'X' || GameBoard[1][0] == 'O');
                 else
                 {
                     GameBoard[1][0] = PlayerLetter;
@@ -340,9 +323,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 5:
-                if (GameBoard[1][1] == 'X' || GameBoard[1][1] == 'O')
-                {
-                }
+                if (GameBoard[1][1] == 'X' || GameBoard[1][1] == 'O');
                 else
                 {
                     GameBoard[1][1] = PlayerLetter;
@@ -351,9 +332,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 6:
-                if (GameBoard[1][2] == 'X' || GameBoard[1][2] == 'O')
-                {
-                }
+                if (GameBoard[1][2] == 'X' || GameBoard[1][2] == 'O');
                 else
                 {
                     GameBoard[1][2] = PlayerLetter;
@@ -362,9 +341,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 7:
-                if (GameBoard[2][0] == 'X' || GameBoard[2][0] == 'O')
-                {
-                }
+                if (GameBoard[2][0] == 'X' || GameBoard[2][0] == 'O');
                 else
                 {
                     GameBoard[2][0] = PlayerLetter;
@@ -373,9 +350,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 8:
-                if (GameBoard[2][1] == 'X' || GameBoard[2][1] == 'O')
-                {
-                }
+                if (GameBoard[2][1] == 'X' || GameBoard[2][1] == 'O');
                 else
                 {
                     GameBoard[2][1] = PlayerLetter;
@@ -384,9 +359,7 @@ void TicTacToeBoard::AI_SetBox(char PlayerLetter)
                 }
                 break;
             case 9:
-                if (GameBoard[2][2] == 'X' || GameBoard[2][2] == 'O')
-                {
-                }
+                if (GameBoard[2][2] == 'X' || GameBoard[2][2] == 'O');
                 else
                 {
                     GameBoard[2][2] = PlayerLetter;
